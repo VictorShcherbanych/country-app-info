@@ -35,11 +35,14 @@ cd country-app-info
 npm install
 ```
 
-3. Create a `.env` file in the root directory (see `.env.example`):
+3. Create a `.env` file in the root directory:
 ```
 PORT=5000
 MONGO_URI=mongodb://localhost:27017/country-info-app
 JWT_SECRET=your_jwt_secret_key_here
+COUNTRY_API_BASE=https://date.nager.at/api/v3
+POPULATION_API_BASE=https://countriesnow.space/api/v0.1/countries/population
+FLAG_API_BASE=https://countriesnow.space/api/v0.1/countries/flag/images
 ```
 
 ## Running the Application
