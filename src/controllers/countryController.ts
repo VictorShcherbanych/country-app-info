@@ -13,7 +13,6 @@ export const getCountries = async (req: Request, res: Response) => {
 export const getCountryDetails = async (req: Request, res: Response) => {
   const { countryCode } = req.params;
   try {
-    console.log('Fetching country details for:', countryCode);
     const countryInfo = await getCountryInfo(countryCode);
     res.json(countryInfo);
   } catch (error) {
